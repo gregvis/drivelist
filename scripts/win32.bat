@@ -52,6 +52,8 @@ For Each objDrive In colDiskDrives
             Wscript.Echo "mountpoint: """ & objLogicalDisk.DeviceID & """"
             Wscript.Echo "name: """ & objLogicalDisk.DeviceID & """"
             Wscript.Echo "raw: """ & DeviceID & """"
+            Wscript.Echo "volumename: """ & objLogicalDisk.VolumeName & """"
+            Wscript.Echo "volumeserialnumber: """ & objLogicalDisk.VolumeSerialNumber & """"
 
             If objLogicalDisk.Access = 1 Then
               Wscript.Echo "protected: True"

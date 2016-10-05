@@ -21,6 +21,7 @@ for disk in $DISKS; do
 
   description=`echo "$diskinfo" | get_key "Device / Media Name"`
   volume_name=`echo "$diskinfo" | get_key "Volume Name"`
+  volume_uuid=`echo "$diskinfo" | get_key "Volume UUID"` 
   removable=`echo "$diskinfo" | get_key "Removable Media"`
   protected=`echo "$diskinfo" | get_key "Read-Only Media"`
   location=`echo "$diskinfo" | get_key "Device Location"`
